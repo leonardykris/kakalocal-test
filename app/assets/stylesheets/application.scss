@@ -1,0 +1,78 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require bootstrap-tokenfield
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+/* Modules will scale with document */
+.header {
+  	font-size: 1.5rem;
+}
+.footer {
+  	font-size: 0.75rem;
+}
+.sidebar {
+  	font-size: 0.85rem;
+}
+
+/* Type will scale with modules */
+h1 {
+  	font-size: 3em;
+}
+h2 {
+  	font-size: 2.5em;
+}
+h3 {
+  	font-size: 2em;
+}
+
+.navbar {
+	height: 80px;
+	.nav {
+		li {
+			color: #888;
+			font-size: 1.5em;
+
+			a {
+				color: #888;
+			}
+			a:hover {
+				color: #888;
+			}
+			span {
+				color: #EF746F;
+			}
+		}
+	}
+
+	.navbar-brand {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		margin-top: 15px;
+		color: #EF746F;
+	}
+
+	.navbar-right {
+		margin-top: 15px;
+	}
+}

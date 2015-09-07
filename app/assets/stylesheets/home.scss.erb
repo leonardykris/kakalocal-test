@@ -1,0 +1,162 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@media (max-width: 400px) {
+  	#hero:before {
+  	    background-position: -36px -120px !important;
+  	    height: 90% !important;
+  	    transform: scale(2,2);
+  	}
+}
+
+html {
+	-webkit-font-smoothing: antialiased;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	background-color: #333;
+	color: white;
+}
+
+#hero:before {
+	background: url("<%= asset_path 'kaka_bg_2.jpg' %>") no-repeat center top;
+    background-position: center bottom;
+    background-size: cover;
+    -webkit-filter: opacity(0.6);
+    position: fixed;
+    content: "";
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+    height: 100%;
+}
+
+#hero {
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 0;
+	color: #fff;
+
+	h1 {
+		font-size: 6em;
+	}
+
+	.intro-text {
+		margin-top: 240px;
+		text-transform: uppercase;
+		font-weight: 700;
+		color: #fff;
+		font-family: 'Montserrat', sans-serif;
+		text-align: center;
+	}
+}
+
+input[type="text"] {
+  	padding: 12px 18px;
+  	// height: 60px;
+  	width: 100%;
+  	font-size: 1.5em;
+  	appearance: none;
+  	// box-shadow: none;
+  	box-shadow: 0 2px 0 0 rgba(0,0,0,0.1);
+  	border-radius: 4px;
+	border: none;
+  	// border-bottom: solid 2px #F57C00;
+  	// transition: border 0.3s;
+  	// text-align: center;
+  	// color: white;
+  	// background-color: #FF9100;
+  	background-color: #fff;
+  	color: rgba(0, 0, 0, 0.5);
+}
+input[type="text"]:focus {
+  	outline: none;
+}
+
+#results {
+	padding: 12px 18px;
+	width: 100%;
+	font-size: 1.5em;
+	color: rgba(0, 0, 0, 0.5);
+	border-radius: 4px;
+	background-color: #fff;
+	display: none;
+
+	div {
+		cursor: pointer;
+
+		span {
+			color: #EF746F;
+		}
+	}
+	div:not(:last-child) {
+		padding-bottom: 10px;
+	}
+	div:hover {
+		background-color: #EEE;
+	}
+}
+
+::-webkit-input-placeholder::before { font-family: fontAwesome; content:'\f002  '; }
+::-moz-placeholder::before  { font-family: fontAwesome; content:'\f002  '; color: #69f } /* firefox 19+ */
+:-ms-input-placeholder::before  { font-family: fontAwesome; content:'\f002  '; color: #69f } /* ie */
+input:-moz-placeholder::before  { font-family: fontAwesome; content:'\f002  '; }
+
+
+// input[type="text"] {
+// 	position: fixed;
+// 	left: 0;
+// 	bottom: 0;
+//   	// padding: 15px 20px;
+//   	height: 10%;
+//   	width: 100%;
+//   	font-size: 1em;
+//   	appearance: none;
+//   	box-shadow: none;
+//   	// border-radius: 3px;
+// 	border: none;
+//   	// border-bottom: solid 2px #F57C00;
+//   	transition: border 0.3s;
+//   	text-align: center;
+//   	color: white;
+//   	// background-color: #FF9100;
+//   	background-color: #fff;
+//   	color: rgba(0, 0, 0, 0.5);
+// }
+
+// input[type=text]::-webkit-inner-spin-button,
+// input[type=text]::-webkit-outer-spin-button {
+//   -webkit-appearance: none;
+//   margin: 0;
+// }
+
+// input[type="text"]:focus {
+//   	outline: none;
+// }
+
+// input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+//     // color: #fefefe;
+//     color: rgba(0, 0, 0, 0.5);
+// }
+// input:focus::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+//     // color: #FFB74D;
+//     color: rgba(0, 0, 0, 0.2);
+// }
+
+// ::-moz-placeholder { /* Mozilla Firefox 19+ */
+//    color: #fefefe;
+//    opacity:  1;
+// }
+
+// :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+//    color: #fefefe;
+//    opacity:  1;
+// }
+// :-ms-input-placeholder { /* Internet Explorer 10-11 */
+//    color: #fefefe;
+// }
+
+// ::-webkit-input-placeholder::before { font-family: fontAwesome; content:'\f002  '; }
+// ::-moz-placeholder::before  { font-family: fontAwesome; content:'\f002  '; color: #69f } /* firefox 19+ */
+// :-ms-input-placeholder::before  { font-family: fontAwesome; content:'\f002  '; color: #69f } /* ie */
+// input:-moz-placeholder::before  { font-family: fontAwesome; content:'\f002  '; }

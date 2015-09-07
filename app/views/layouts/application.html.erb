@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Kakalocal</title>
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+		<%= csrf_meta_tags %>
+		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+				    <a class="navbar-brand" href="#">
+				        KAKALOCAL
+				    </a>
+			    </div>
+			    <ul class="nav navbar-nav navbar-right">
+		            <li><a href="">Signed in as <span>Guest</span></a></li>
+			    </ul>
+			</div>
+		</nav>
+		<%= yield %>
+	</body>
+</html>
